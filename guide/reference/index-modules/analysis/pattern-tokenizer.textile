@@ -12,7 +12,7 @@ p. A tokenizer of type @pattern@ that can flexibly separate text into terms via 
 |@flags@|The regular expression flags.|
 |@group@|Which group to extract into tokens. Defaults to @-1@ (split).|
 
-p. *IMPORTANT*: The regular expression should match the *token separators*, not the tokens themselves.
+p. *IMPORTANT*: When splitting, the regular expression should match the *token separators*, not the tokens themselves.
 
 p. @group@ set to @-1@ (the default) is equivalent to "split". Using Using group >= 0 selects the matching group as the token. For example, if you have:
 
