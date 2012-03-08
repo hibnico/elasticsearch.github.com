@@ -1,0 +1,14 @@
+---
+layout: guide
+title: Classic Analyzer
+cat: guide
+sidebar: reference_index_modules_analysis
+---
+
+p. An analyzer of type @classic@ that is built of using "Classic Tokenizer":classic-tokenizer.html, with "Classic Token Filter":classic-tokenfilter.html, "Lower Case Token Filter":lowercase-tokenfilter.html, and "Stop Token Filter":stop-tokenfilter.html.
+
+p. The following are settings that can be set for a @classic@ analyzer type:
+
+|_. Setting |_. Description |
+|@stopwords@|A list of stopword to initialize the stop filter with. Defaults to the english stop words.|
+|@max_token_length@|The maximum token length. If a token is seen that exceeds this length then it is discarded. Defaults to @255@.|
